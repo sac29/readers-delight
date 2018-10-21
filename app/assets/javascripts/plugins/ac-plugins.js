@@ -14,3 +14,4 @@
 //= require ./angular
 //= require ./app
 //= require ./common
+//= require ./angular-setup

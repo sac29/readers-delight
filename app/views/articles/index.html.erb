@@ -1,0 +1,27 @@
+<div class="js_articles_container"
+  data-content=""
+  ng-controller='UsersController' ng-cloak>
+  <main class="mt-5 pt-5">
+      <div class="container">
+          <!--Section: Post-->
+          <section class="mt-4" ng-if="!is_admin">
+              <!--Grid row-->
+              <div class="row">
+
+                  <div class="col-md-8 mb-4">
+                      <%= render 'articles/sign_up' %>
+                  </div>
+
+                  <div class="col-md-4 mb-4">
+                      <%= render 'articles/login' %>
+                  </div>
+
+              </div>
+              <!--Grid row-->
+
+          </section>
+          <!--Section: Post-->
+          
+      </div>
+  </main>
+</div>

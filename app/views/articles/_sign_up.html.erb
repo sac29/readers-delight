@@ -1,0 +1,47 @@
+<div class="card mb-4 wow fadeIn">
+  <div class="card-header">New User Registeration</div>
+
+
+    <div class="card-body">
+
+      <div style="width: 450px;">
+
+        <label class="grey-text">Name</label>
+        <input type="text" ng-model="userRegistrationForm.name" class="form-control">
+
+        <br>
+
+        <label class="grey-text">Email</label>
+        <input type="email" ng-model="userRegistrationForm.email" class="form-control">
+
+        <br>
+
+        <label class="grey-text">Mobile</label>
+        <input type="text" ng-model="userRegistrationForm.mobile" class="form-control">
+
+        <br>
+        <div class="form-group">
+          <label class="grey-text">Gender</label>
+
+          <select class="form-control" ng-model="userRegistrationForm.gender" ng-options="gender for gender in genders">
+            <option value="">Select</option>
+          </select>
+
+        </div>
+
+        <label class="grey-text">Password</label>
+        <input type="password" ng-model="userRegistrationForm.password" class="form-control">
+
+        <div class="text-center mt-4">
+            <button class="btn btn-info btn-md"  ng-click="signUP()">Sign up</button>
+        </div>
+
+        <div class="" style="color: green;">
+          {{success_message}}
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
