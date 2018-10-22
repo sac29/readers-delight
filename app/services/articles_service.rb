@@ -1,7 +1,8 @@
 require 'openssl'
 class ArticlesService
 
-  def fetch_data(tag)
+  def fetch_articles(tag)
+    return if tag.blank?
     url = "https://medium.com/tag/#{tag}"
     posts = Nokogiri::HTML(open(url));''
 
