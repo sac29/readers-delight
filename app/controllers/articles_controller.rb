@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
 
 
   def fetch_articles
-    message = ArticlesService.new.fetch_data(params[:tag])
+    message = ArticlesService.new.fetch_articles(params[:tag])
     render(json: { message: "Articles created" }, status: 200)
   end
 
